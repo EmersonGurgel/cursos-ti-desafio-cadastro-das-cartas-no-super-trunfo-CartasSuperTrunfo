@@ -23,7 +23,7 @@ int main() {
      
     // Definição de variáveis;
     char estado;
-    char codigo[3];
+    char codigo[20];
     char nomedacidade[20];
     int populacao;
     float area;
@@ -37,32 +37,33 @@ int main() {
     printf("Digite o estado:\n");
     scanf("%c", &estado);
     
-    printf("Digite o código\n");
-    scanf("%s", &codigo);
+    printf("Digite o código:\n");
+    scanf("%s", codigo);
     
-    print("Digite o nome da cidade\n");
-    scanf("%s", &nomedacidade);
+    printf("Digite o nome da cidade:\n");
+    scanf("%s", nomedacidade);
 
-    print("Digite a população\n");
+    printf("Digite a população:\n");
     scanf("%d", &populacao);
 
-    printf("Digite a área\n");
+    printf("Digite a área:\n");
     scanf("%f", &area);
 
-    printf("Digite o pib\n");
+    printf("Digite o pib:\n");
     scanf("%f", &pib);
 
-    printf("Digite o número de pontos turísticos\n");
+    printf("Digite o número de pontos turísticos:\n");
     scanf("%d", &pontosturisticos);
-
+    printf("\n\n");
+    
     //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
-    printf("Estado: %c", estado);
-    printf("Código da cidade: %s", codigo);
-    printf("Nome da cidade: %s", nomedacidade);
-    printf("População: %d", populacao);
-    printf("Área: %f", area);
-    printf("Pib: %f", pib);
-    printf("Pontos turísticos: %d", pontosturisticos);
+    printf("Estado: %c\n", estado);
+    printf("Código da cidade: %s\n", codigo);
+    printf("Nome da cidade: %s\n", nomedacidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %f km²\n", area);
+    printf("Pib: %f\n", pib);
+    printf("Pontos turísticos: %d\n", pontosturisticos);
 
 
 }
